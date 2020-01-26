@@ -1,0 +1,20 @@
+The objective of the game is for the player to guess a number between 1 and 50. To win the game
+you must guess the correct number. 
+
+To play the game, the player must first insert their name and confirm playing by typing yes or no in the 
+terminal. Then a series of prompts tell the player to guess a number  and the player must 
+insert their guess. The range of numbers differ from the difficulty the player selects. Easy mode is 1-20,
+medium is 1-50 and hard mode is 1-100. 
+
+
+The player wins when they manage to guess the number.
+
+Players must type yes or no and a few other options in order to start the game. This is a limitation that 
+I faced when designing my game as I cannot predict every alternative that the player will type (e.g yeah, nah)
+
+To solve this problem I looped a print statement "Sorry I do not understand, Do you want to play the game" and 
+used a global variable to notate the "Sorry I do not understand" for other portions of the code when the player 
+faces problems inputing. For example, when players attempt to guess a number and instead uses different data 
+types (e.g 4.12, humus, ketchup) I can use another local variable to state "Please insert a number" and loop 
+that aswell.I used a global variable "guesses". 
+
